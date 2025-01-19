@@ -1,0 +1,350 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: myfont;
+    list-style: none;
+    color: #fff;
+   
+}
+body{
+    background-color: #333;
+}
+@font-face {
+    font-family: myfont;
+    src: url(Kana\ \(ቃና\).ttf);
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px;
+    border-bottom: 2px solid #bababa;
+    border-top: 2px solid #bababa;
+}
+.logo{
+    cursor: pointer;
+}
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+a{
+    margin: 10px 15px;
+    text-decoration: none;
+ 
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+   background: url();
+   background-size: cover;
+   background-position: center;
+}
+.container h1{
+    font-size: 10em;
+    position: relative;
+}
+.container img{
+    position: absolute;
+    width: 400px;
+    margin-top: 80px;
+    filter: drop-shadow(0 0 1px);
+    object-fit: cover;
+}
+.container button{
+    position: relative;
+    margin-top: 180px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: #333;
+}
+.container button:hover{
+    background-color: #fff;
+    color: #000;
+    transition: .5s;
+    
+}
+.container button i{
+    rotate: -45deg;
+}
+.container button i:hover{
+    color: #000;
+}
+@media screen and (max-width:600px) {
+    body{
+       
+    }
+    .container h1{
+        font-size: 3.7em;
+        
+    }
+   .container{
+    padding: 50px;
+   }
+ 
+ .title p{
+
+        font-size: 14px; /* Reduce font size */
+        line-height: 1.4; /* Adjust line spacing for better readability */
+      }
+      .title{
+        width: 90%;
+      } 
+      .detail{
+        flex-wrap: wrap;
+      } 
+      .title  h2{
+        margin-left: -50px;
+      } 
+      .services .pro h1{
+        text-align: center;
+        font-size: 4em;
+        padding-top: 50px;
+    }
+    .services{
+       width: 100%;
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width:600px) {
+    .autoBlur{
+        text-align: center;
+        font-size: 2em;
+        line-height: 1;
+        animation: autoblurAnimation linear both;
+        animation-timeline: view();
+    }
+    .contact{
+
+    }
+   .contact form input{
+    width: 90%;
+    height: 20px;
+    margin: 10px;
+    padding: 10px;
+   border-radius: 4px;
+    background-color: transparent;
+    border: 1px solid #78c51c;
+    outline: none;
+    
+}
+.contact textarea{
+    width: 90%;
+    height: 200px;
+    margin: 10px;
+    padding: 10px;
+   border-radius: 4px;
+    background-color: transparent;
+    border: 1px solid #78c51c;
+    outline: none;
+}
+#btn{
+    width: 100%;
+  height: 20px;
+    color: #fff;
+    background-color: #78c51c;
+  height: 40px;
+  border: none;
+  border-radius: 4px;
+  margin: 10px;
+  cursor: pointer;
+}
+.grid .autoBlur{
+    font-size: 3em;
+}
+.detail .skills i{
+    font-size: 16px;
+}
+.skills{
+    margin-left: -40px;
+}
+    
+}
+.slide{
+    
+}
+.detail{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+   gap: 20px;
+}
+.title{
+    width: 80%;
+  
+}
+.title h2{
+    font-size: 3em;
+    margin-top: -30px;
+    padding: 50px;
+}
+.title p{
+    word-wrap: break-word; /* Deprecated, but works in older browsers */
+    overflow-wrap: break-word; /* Modern and preferred */
+    white-space: normal;
+  
+}
+.skills{
+    display: flex;
+    /* Allows items to wrap to the next row */
+    box-shadow: 0 5px 10px #78c51c;
+    width: max-content;
+}
+
+
+.skills i{
+   
+    width: 40px;
+    height: 40px;;
+    margin: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+   
+    cursor: pointer;
+    font-size: 30px;
+}
+.fa-html5{
+    background-color: rgb(191, 25, 25);
+}
+.fa-css3-alt{
+    background-color: rgb(0, 102, 255);
+}
+.fa-js{
+    background-color: rgb(156, 156, 17);
+}
+.fa-php{
+    background-color: rgb(109, 34, 178);
+}
+.fa-database{
+    background-color: rgb(120, 2, 183);
+}
+.autoShow{
+ 
+    animation: autoShowAnimation both;
+    animation-timeline: view(70% 5%);
+}
+
+@keyframes autoShowAnimation {
+    from{
+        opacity: 0;
+        transform: translateY(200px) scale(0.3);
+    }to{
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+.autoBlur{
+    text-align: center;
+    font-size: 5em;
+    line-height: 1;
+    animation: autoblurAnimation linear both;
+    animation-timeline: view();
+}
+@keyframes autoblurAnimation{
+    0%{
+        filter: blur(40px);
+    }
+    45%,55%{
+        filter: blur(0px);
+    }
+    100%{
+        filter: blur(40px);
+    }
+}
+.services{
+    
+    background-color: #78c51c;
+}
+.services h1{
+    text-align: center;
+    font-size: 5em;
+    padding-top: 50px;
+}
+.projet-view{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    
+}
+.item{
+    background-color: #000000;
+    width: 300px;
+    height: 200px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.item p{
+opacity: 1;
+}
+.item img{
+width: 320px;
+height: 230px;
+}
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+form{
+padding: 20px;
+}
+fieldset{
+    padding: 20px;
+}
+form input{
+    width: 200px;
+    height: 20px;
+    margin: 10px;
+    padding: 10px;
+   border-radius: 4px;
+    background-color: transparent;
+    border: 1px solid #78c51c;
+    outline: none;
+    
+}
+form textarea{
+    width: 95%;
+    height: 200px;
+    margin: 10px;
+    padding: 10px;
+   border-radius: 4px;
+    background-color: transparent;
+    border: 1px solid #78c51c;
+    outline: none;
+}
+#btn{
+    width: 100%;
+  height: 20px;
+    color: #fff;
+    background-color: #78c51c;
+  height: 40px;
+  border: none;
+  border-radius: 4px;
+  margin: 10px;
+  cursor: pointer;
+}
+.contact .img img{
+    background-color: #78c51c;
+    overflow: hidden;
+    width: 300px;
+    margin: 10px;
+}
+footer{
+text-align: center;
+padding: 20px;
+}
